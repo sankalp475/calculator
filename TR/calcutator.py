@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # from functions import*
-# Caclutator TR Sürümü LinuxUsersLinuxMint tarafından Çevirisi yapılmıştır.
+# Calcutator TR Sürümü LinuxUsersLinuxMint tarafından Çevirisi yapılmıştır.
 
 while True:
     print("Çıkış yapmak için n tuşuna tıklayınız.s")
