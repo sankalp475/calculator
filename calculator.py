@@ -1,14 +1,15 @@
+#!/usr/bin/python3
 # from functions import*
 
 while True:
-    print("use n fot exit")
-    op = input("choose the operator?'(+ , - , * , /)'\n")
+    print("use n for exit")
+    op = input("choose the operator?'(+ , - , * , /, %)'\n") # LinuxUsersLinuxMint adding the percentile operator
     # input operator from user
     if op == 'n':
         break
-    num1 = float(input("enter first number\n"))
+    num1 = float(input("enter 1st number\n")) # edited by LinuxUsersLinuxMint
     # input number 1 from user
-    num2 = float(input("enter the second number\n"))
+    num2 = float(input("enter 2st number\n")) # edited by LinuxUsersLinuxMint
     # input number 2 from user
     
     def addition(num1,num2):
@@ -23,6 +24,9 @@ while True:
     def division(num1,num2):
         if num2 == 0:
             print("cant divide by zero")
+    def percentage(num1,num2): # LinuxUsersLinuxMint adding the percentile operator
+        result = num1 % num2
+        print("{0} % {1} = {2}". format(num1,num2,result))
         else:
             result = num1 / num2
             print("{0} / {1} = {2}".format(num1,num2,result))
@@ -35,6 +39,8 @@ while True:
         multiplication(num1,num2)   
     elif op == '/':
         division(num1,num2)
+    elif op == '%':  # LinuxUsersLinuxMint adding the percentile operator
+        percentage(num1,num2)
     else:
         print("invalid number")
     print("thanks for using python calculator")
