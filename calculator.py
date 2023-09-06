@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# from functions import*
 
 while True:
     print("use n for exit") # Fixed by LinuxUsersLinuxMint
