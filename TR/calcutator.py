@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-# from functions import*
 # Calcutator TR Sürümü LinuxUsersLinuxMint tarafından Çevirisi yapılmıştır.
 
 while True:
-    print("Çıkış yapmak için n tuşuna tıklayınız.s")
+    print("Çıkış yapmak için n tuşuna tıklayınız.s") # LinuxUsersLinuxMint tarafından düzeltilmiştir.
     op = input("Operator seçiniz?'(+ , - , * , /, %)'\n")
     # input operator from user
     if op == 'n':
@@ -28,7 +27,7 @@ while True:
         else:
             result = num1 / num2
             print("{0} / {1} = {2}".format(num1,num2,result))
-    def percentage(num1,num2):
+    def percentage(num1,num2): # LİnuxUsersLinuxMint taradından düzenlenmiştir.
         result = num1 % num2
         print("{0} % {1} = {2}". format(num1,num2,result))
             
@@ -40,7 +39,7 @@ while True:
         multiplication(num1,num2)   
     elif op == '/':
         division(num1,num2)
-    elif op == '%':
+    elif op == '%': # LinuxUsersLinuxMint tarafından düzenlenmiştir.
         percentage(num1,num2)
     else:
         print("Geçersiz Numara")
