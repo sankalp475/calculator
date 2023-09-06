@@ -2,14 +2,14 @@
 # from functions import*
 
 while True:
-    print("use n for exit")
-    op = input("choose the operator?'(+ , - , * , /, %)'\n")
+    print("use n for exit") # Fixed by LinuxUsersLinuxMint
+    op = input("choose the operator?'(+ , - , * , /, %)'\n") # Edited by LinuxUsersLinuxMint
     # input operator from user
     if op == 'n':
         break
-    num1 = float(input("enter 1st number\n"))
+    num1 = float(input("enter 1st number\n")) # Edited by LinuxUsersLinuxMint
     # input number 1 from user
-    num2 = float(input("enter 2nd number\n"))
+    num2 = float(input("enter 2nd number\n")) # Edited by LinuxUsersLinuxMint
     # input number 2 from user
     
     def addition(num1,num2):
@@ -27,7 +27,7 @@ while True:
         else:
             result = num1 / num2
             print("{0} / {1} = {2}".format(num1,num2,result))
-    def percentage(num1,num2):
+    def percentage(num1,num2): # Edited by LinuxUsersLinuxMint
         result = num1 % num2
         print("{0} % {1} = {2}". format(num1,num2,result))
             
@@ -39,7 +39,7 @@ while True:
         multiplication(num1,num2)   
     elif op == '/':
         division(num1,num2)
-    elif op == '%':
+    elif op == '%': # Edited by LinuxUsersLinuxMint
         percentage(num1,num2)
     else:
         print("invalid number")
