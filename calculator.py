@@ -1,40 +1,21 @@
-# from functions import*
-
+#!/usr/bin/python3
+from inputd import *
 while True:
-    print("use n fot exit")
-    op = input("choose the operator?'(+ , - , * , /)'\n")
+    print("use n for exit") # Fixed by LinuxUsersLinuxMint
+    op = input("choose the operator?'(+ , - , * , /, %)'\n") # Edited by LinuxUsersLinuxMint
     # input operator from user
     if op == 'n':
         break
-    num1 = float(input("enter first number\n"))
-    # input number 1 from user
-    num2 = float(input("enter the second number\n"))
-    # input number 2 from user
-    
-    def addition(num1,num2):
-        result = num1 + num2
-        print("{0} + {1} = {2}".format(num1,num2,result))
-    def substraction(num1,num2):
-        result = num1 - num2
-        print("{0} - {1} = {2}".format(num1,num2,result))
-    def multiplication(num1,num2):
-        result = num1 * num2
-        print("{0} * {1} = {2}".format(num1,num2,result))
-    def division(num1,num2):
-        if num2 == 0:
-            print("cant divide by zero")
-        else:
-            result = num1 / num2
-            print("{0} / {1} = {2}".format(num1,num2,result))
-            
     if op == '+':
-        addition(num1,num2)
+        addition()
     elif op == '-':
-        substraction(num1,num2)
+        subraction()
     elif op == '*':
-        multiplication(num1,num2)   
+        multiplication()   
     elif op == '/':
-        division(num1,num2)
+        division()
+    elif op == '%': # Edited by LinuxUsersLinuxMint
+        Percentage()
     else:
         print("invalid number")
     print("thanks for using python calculator")
